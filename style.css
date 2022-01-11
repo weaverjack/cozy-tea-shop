@@ -54,7 +54,6 @@ main {
     background-size: cover;
     width: 1200px;
     height: 700px;
-    flex-basis: 100%;
     display: flex;
     align-items: center;
     margin: 2.25rem;
@@ -69,35 +68,30 @@ main {
 }
 
 
-/* EVERYTHING ABOVE SEEMS TO WORK*/
-
-
-
 .menu {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 1000px;
-
     
-
+    width: 1000px;
 }
+
 
 .month {
     width: 100%;
-
 }
 
-.photos {
-    width: 100%;
+.col {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.class {
+figure {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    margin: 0 15px;
+
 }
+
 .photos img {
     width: 300px;   
     height: 200px;
@@ -110,9 +104,7 @@ main {
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
-   
     
-
 
 }
 
@@ -120,12 +112,12 @@ main {
     width: 100%;
     padding-top: 2rem;
     margin-bottom: 0;
-    line-height: ;
 }
 
 .cards {
     display: flex;
     justify-content: center;
+    align-content: center;
     margin-top: -20px;
     
 }
