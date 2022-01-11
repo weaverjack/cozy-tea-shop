@@ -3,18 +3,18 @@ html {
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     text-align: center;
+    box-sizing: border-box;
+  
 }
 
 body {
     margin: 0;
-    padding: 0;
-    border: red solid;
 }
 
 header {
-    flex-basis: 60px;
+    flex-basis: 69px;
     border-bottom: 1px solid seashell;
     display: flex;
     justify-content: space-between;
@@ -25,32 +25,27 @@ header {
     background-color: black;
     width: 100%;
 
-
-
 }
 header img {
     float: left;
     margin-left: 10px;
     height: 50px;
-
 }
 
-header ul {
-    
-}
 
 header li {
     display: inline;
     text-decoration: underline;
     padding: 10px;
+
 }
 
 main {
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
     top: 69px;
-    
+    justify-content: center;
+
 
 }
 
@@ -62,6 +57,8 @@ main {
     flex-basis: 100%;
     display: flex;
     align-items: center;
+    margin: 2.25rem;
+
 }
 
 .mission div {
@@ -71,21 +68,81 @@ main {
 
 }
 
+
+/* EVERYTHING ABOVE SEEMS TO WORK*/
+
+
+
 .menu {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     width: 1000px;
-    
+
     
 
 }
 
 .month {
-    
-    border: red solid;
-    
+    width: 100%;
+
 }
 
 .photos {
-    flex-basis: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.class {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.photos img {
+    width: 300px;   
+    height: 200px;
+
+}
+
+.locations {
+    background-image: url(/media/img-locations-background.jpg);
+    width: 1200px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    
+
+
+}
+
+.locations .title {
+    width: 100%;
+    padding-top: 2rem;
+    margin-bottom: 0;
+    line-height: ;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    
+}
+
+.loc {
+    background-color: black;
+    margin: 15px 40px;
+    flex-basis: 300px;
+    opacity: 1;
+}
+
+.contact {
+    height: 150px;
+    margin-bottom: 0;
+}
+
+.copyright {
+    text-align: left;
+    margin: 0 20px;
 }
